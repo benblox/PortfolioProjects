@@ -63,6 +63,7 @@ ORDER BY death_percentage DESC
 SELECT location, MAX(cast(total_deaths AS int)) AS total_deaths
 FROM PortfolioProject..CovidDeaths
 WHERE continent IS NULL
+AND location not in ('World', 'European Union', 'International')
 GROUP BY location
 ORDER BY total_deaths DESC
 
