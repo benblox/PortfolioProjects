@@ -1,4 +1,4 @@
--- Selecting all data from CovidDeaths table
+-- Selecting general country data from CovidDeaths table
 
 SELECT location, date, total_cases, new_cases, total_deaths, population
 FROM PortfolioProject..CovidDeaths
